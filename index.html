@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lolilab - 實驗室</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <div id="logo">
+            <img src=""  width="128px">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">INDEX</a>
+                </li>
+                <li><a href="#">PRODUCT</a>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="header" class="section">
+        <div class="inside">
+            <h1 class="title">
+                <img src="./images/title.png" width="800px" alt="Lolilab">
+            </h1>
+            <p class "context">
+                <img src="./images/context.png" width="700px" alt="Lolilab">
+            </p>
+            <p class "next-button">
+                <img src="./images/button1.png" width="200px" alt="Lolilab">
+            </p>
+        </div>
+    </section>
+    <section id="product" class="section">
+        <div class="inside">
+            <h1>
+                <img src="./images/product.png" width="200px" alt="Lolilab">
+            </h1>
+            <div id="product-list">
+                <div class="product" style="">
+                    <img src="./images/lm3886.jpg" class="product-bg">
+                    <h1 class="title">LM3886 Power Amplifier</h1>
+                    <p class="info">Use LM3886 IC create power amplifier,make beautiful aduio.</p>
+                </div>
+                <div class="product" style="">
+                    <img src="./images/proman.jpg" class="product-bg">
+                    <h1 class="title">Artificial Intelligence</h1>
+                    <p class="info">Use AR and Combining multiple technologies to build new generations artificial intelligence.</p>
+                </div>
+                <div class="product" style="">
+                    <img src="./images/fps.jpg" class="product-bg">
+                    <h1 class="title">3D Racing+FPS</h1>
+                    <p class="info">We make 3d drive + fps creative game. project name:
+                        <span class="probname">CAR FIGHT</span>
+                    </p>
+                </div>
+                <div class="product" style="">
+                    <img src="./images/servers.jpg" class="product-bg">
+                    <h1 class="title">Hyper Moe Server(HMS)</h1>
+                    <p class="info">HMS is a game server, provided TCP,UDP and P2P(limit on PC platform) services.</p>
+                </div>
+                <div class="product" style="">
+                    <img src="./images/3dprinter.jpg" class="product-bg">
+                    <h1 class="title">3D Printer</h1>
+                    <p class="info">We used optical imaging technology to create a fast 3D Printer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="inside">
+            <h1>
+                <img src="./images/about.png" width="170px" alt="Lolilab">
+            </h1>
+            <p>
+                <img src="./images/about-text.png" width="500" alt="Lolilab">
+            </p>
+            <p>
+                <img src="./images/team.png" width="800" alt="Lolilab">
+            </p>
+        </div>
+        <div id="news">
+            <div id="title">
+                <h1>News</h1>
+                <img src="./images/tree.png" alt="Lolilab" width="280px" id="tree">
+                <img src="./images/moe.png" alt="Lolilab" width="200px" id="moe">
+            </div>
+        </div>
+    </section>
+    <section id="art" class="section">
+        <div id="artwall">
+            <div id="title">
+                <h1>Art Graffiti</h1>
+            </div>
+            <div id="imagewall" onmouseout="exit(event)">
+                <img src="./images/wall.jpg" align="center" width="1330px" alt="Lolilab" id="wall">
+                <div id="commit-1" class="commitp" style="height:60px;width:65px;top:650px;left:650px;" onmouseover="show(event)">
+                    <div class="message">
+                        <h1>パンツ</h1>
+                        <p>Boy's favorite... lol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="inside">
+            <h1>
+                <img src="./images/contact.png" width="200px" alt="Lolilab">
+            </h1>
+            <p>
+                <img src="./images/email.png" width="400" alt="Lolilab">
+            </p>
+            <p>
+                <img src="./images/address.png" width="800" alt="Lolilab">
+            </p>
+            <div id="social">
+                <img src="./images/twitter.png" width="64px" alt="Twitter">
+                <img src="./images/facebook.png" width="64px" alt="Facebook">
+                <img src="./images/google+.png" width="64px" alt="Google+">
+                <img src="./images/googleplay.png" width="64px" alt="GooglePlay">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="aria">
+            <div id="cc">
+                <p class="copyright">© 2014 Lolilab Tech Studio</p>
+                <p class="assets">Assets by sublepatterns,
+                    <br>Cuture Japan, pixart</span>
+            </div>
+            <div id="foomenu">
+                <ul id="footer-menu">
+                    <li>首頁</li>
+                    <li>新聞</li>
+                    <li>Creative</li>
+                    <li>Technology</li>
+                </ul>
+                <div id="language">
+                    <ul id="lang-menu">
+                        <li>
+                            <img src="./images/tw.png">
+                        </li>
+                        <li>
+                            <img src="./images/jp.png">
+                        </li>
+                        <li>
+                            <img src="./images/us.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+    function show(e) {
+        var x = document.getElementById(e.target.id).childNodes[1];
+        x.style.display = "block";
+        fadeIn(x);
+    }
+
+    function exit(e) {
+        var x = document.getElementById(e.target.id).childNodes[1];
+        x.style.display = "none";
+    }
+
+    function fadeIn(el) {
+        el.style.opacity = 0;
+
+        var last = +new Date();
+        var tick = function() {
+            el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+            last = +new Date();
+
+            if (+el.style.opacity < 1) {
+                (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+            }
+        };
+
+        tick();
+    }
+    </script>
+</body>
+
+</html>
