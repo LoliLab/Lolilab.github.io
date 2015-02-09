@@ -3,6 +3,8 @@
 body, html {
     border: 0;
     margin: 0px;
+    transition: width 2s;
+    -webkit-transition: width 2s; /* Safari 3.1 to 6.0 */
 }
 a:link {
     text-decoration: none;
@@ -56,6 +58,10 @@ a:active {}
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    -webkit-transition: 100ms ease-in;
+    -moz-transition: 100ms ease-in;
+    -o-transition: 100ms ease-in;
+    transition: 100ms ease-in;
 }
 #menu li a:hover {
     color: white;
@@ -73,7 +79,7 @@ a:active {}
 }
 #header .inside {
     position: absolute;
-    top: 40%;
+    top: 36%;
     left: 0;
     right: 0;
     margin-top: -10em;
@@ -82,7 +88,43 @@ a:active {}
     text-align: center;
 }
 #header .inside .title {
-    font-family: "Eras Bold ITC";
+    font-family: "Eras ITC","Microsoft JhengHei","Helvetica";
+    font-size: 3.7em;
+    text-shadow: 1px 6px 9px #333333;
+}
+#header .inside .context{
+    color: white;
+    margin: 0px auto;
+    width: 650px;
+    padding: 15px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    font-family: "Eras ITC";
+    font-weight: 100;
+    opacity: 0.6;
+    background-color: rgba(0,0,0,1);
+}
+#header .inside .next-button{
+    padding-top: 58px;
+}
+#header .inside .next-button a{
+    padding: 19.5px 50px;
+    color: white;
+    background: rgb(163, 26, 97);
+    font-family: "Eras ITC";
+    font-weight: bold;
+    font-size: 2.3em;
+    -webkit-transition: 100ms ease-in;
+    -moz-transition: 100ms ease-in;
+    -o-transition: 100ms ease-in;
+    transition: 100ms ease-in;
+}
+#header .inside .next-button a:hover{
+    -webkit-transition: 100ms ease-in;
+    -moz-transition: 100ms ease-in;
+    -o-transition: 100ms ease-in;
+    transition: 100ms ease-in;
+    background-color: rgb(17, 104, 178);
 }
 /** header section **/
 
@@ -150,6 +192,12 @@ a:active {}
 #about .inside {
     overflow: hidden;
     text-align: center;
+}
+#about .inside .context{
+    text-align: center;
+    color: #636464;
+    font-family: Eras ITC;
+    FONT-SIZE: 1.3em;
 }
 #about #news {
     padding: 50px;
@@ -333,3 +381,30 @@ footer #aria #foomenu #language #lang-menu > li{
 }
 
 /** Responsive **/
+@media screen and (min-width: 768px) and (max-width: 868px) {
+    /* Contact */
+    .pard img{
+        width: 60%;
+    }
+    #contact .inside #social {
+        letter-spacing: 100px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* Contact */
+    .pard img{
+        width: 100%;
+    }
+    #contact .inside #social {
+        letter-spacing: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* Contact */
+    #contact .inside #social {
+        letter-spacing: 25px;
+    }
+    .icons{
+        width: 35px;
+    }
+}

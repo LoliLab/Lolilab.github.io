@@ -14,13 +14,13 @@
         </div>
         <div id="menu">
             <ul>
-                <li><a href="#">INDEX</a>
+                <li><a href="#header">INDEX</a>
                 </li>
-                <li><a href="#">PRODUCT</a>
+                <li><a href="#product">PRODUCT</a>
                 </li>
-                <li><a href="#">ABOUT</a>
+                <li><a href="#about">ABOUT</a>
                 </li>
-                <li><a href="#">CONTACT</a>
+                <li><a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -28,17 +28,20 @@
     <section id="header" class="section">
         <div class="inside">
             <h1 class="title">
-                <img src="./images/title.png" width="800px" alt="Lolilab">
+                Lolilab - 實驗室
             </h1>
-            <p class "context">
-                <img src="./images/context.png" width="700px" alt="Lolilab">
+            <p class="context">
+                We are indie game development team, but it seems there are more ambitious goals to us! <br><br>
+                Make OS, Electronic equipment, Game, Software, Media...<br>
+                and a group of people love japan anime!
             </p>
-            <p class "next-button">
-                <img src="./images/button1.png" width="200px" alt="Lolilab">
+            <p class="next-button">
+                <a href="#product">NEXT</a>
             </p>
         </div>
     </section>
     <section id="product" class="section">
+        <a name="fornext"></a>
         <div class="inside">
             <h1>
                 <img src="./images/product.png" width="200px" alt="Lolilab">
@@ -79,8 +82,8 @@
             <h1>
                 <img src="./images/about.png" width="170px" alt="Lolilab">
             </h1>
-            <p>
-                <img src="./images/about-text.png" width="500" alt="Lolilab">
+            <p class="context">
+                We are indie game development team from <img src="./images/tw.png"> Taiwan!
             </p>
             <p>
                 <img src="./images/team.png" width="800" alt="Lolilab">
@@ -99,9 +102,9 @@
             <div id="title">
                 <h1>Art Graffiti</h1>
             </div>
-            <div id="imagewall" onmouseout="exit(event)">
+            <div id="imagewall">
                 <img src="./images/wall.jpg" align="center" width="1330px" alt="Lolilab" id="wall">
-                <div id="commit-1" class="commitp" style="height:60px;width:65px;top:650px;left:650px;" onmouseover="show(event)">
+                <div id="commit-1" class="commitp" style="height:60px;width:65px;top:650px;left:650px;" onmouseover="show(event)" onmouseout="exit(event)">
                     <div class="message">
                         <h1>パンツ</h1>
                         <p>Boy's favorite... lol</p>
@@ -112,20 +115,22 @@
     </section>
     <section id="contact" class="section">
         <div class="inside">
-            <h1>
-                <img src="./images/contact.png" width="200px" alt="Lolilab">
-            </h1>
-            <p>
-                <img src="./images/email.png" width="400" alt="Lolilab">
-            </p>
-            <p>
-                <img src="./images/address.png" width="800" alt="Lolilab">
-            </p>
+                <h1>
+                    <img src="./images/contact.png" width="200px" alt="Lolilab">
+                </h1>
+                <div class="pard">
+                <p>
+                    <img src="./images/email.png" width="400" alt="Lolilab">
+                </p>
+                <p>
+                    <img src="./images/address.png" width="800" alt="Lolilab">
+                </p>
+            </div>
             <div id="social">
-                <img src="./images/twitter.png" width="64px" alt="Twitter">
-                <img src="./images/facebook.png" width="64px" alt="Facebook">
-                <img src="./images/google+.png" width="64px" alt="Google+">
-                <img src="./images/googleplay.png" width="64px" alt="GooglePlay">
+                <img class="icons" src="./images/twitter.png" width="64px" alt="Twitter">
+                <img class="icons" src="./images/facebook.png" width="64px" alt="Facebook">
+                <img class="icons" src="./images/google+.png" width="64px" alt="Google+">
+                <img class="icons" src="./images/googleplay.png" width="64px" alt="GooglePlay">
             </div>
         </div>
     </section>
@@ -159,34 +164,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-    function show(e) {
-        var x = document.getElementById(e.target.id).childNodes[1];
-        x.style.display = "block";
-        fadeIn(x);
-    }
-
-    function exit(e) {
-        var x = document.getElementById(e.target.id).childNodes[1];
-        x.style.display = "none";
-    }
-
-    function fadeIn(el) {
-        el.style.opacity = 0;
-
-        var last = +new Date();
-        var tick = function() {
-            el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
-            last = +new Date();
-
-            if (+el.style.opacity < 1) {
-                (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-            }
-        };
-
-        tick();
-    }
-    </script>
 </body>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./js/main.js" type="text/javascript"></script>
 </html>
