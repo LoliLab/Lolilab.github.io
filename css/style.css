@@ -6,6 +6,9 @@ body, html {
     transition: width 2s;
     -webkit-transition: width 2s; /* Safari 3.1 to 6.0 */
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 a:link {
     text-decoration: none;
 }
@@ -22,10 +25,10 @@ a:active {}
 
 #nav-bar {
     position: fixed;
-    background: white;
+    background: rgba(255,255,255,0.7);
     width: 100%;
     z-index: 10000;
-    box-shadow: 3px 3px 9px #333333;
+    box-shadow: 1px 1px 40px #333333;
 }
 #nav-bar #logo{
 	float: left;
@@ -47,14 +50,17 @@ a:active {}
     font-family: '微軟正黑體';
 }
 #menu li a {
-    color: #CC342D;
+    font-family: Open Sans;
+    font-weight: bold;
+    background: #e6e6e6;
+    color: #5a5a5a;
     font-size: 16px;
     padding: 8px 30px 8px 30px;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     transition: 0.4s;
-    border: 1px solid #9b1c16;
+    /*border: 1px solid #9b1c16;*/
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -64,8 +70,8 @@ a:active {}
     transition: 100ms ease-in;
 }
 #menu li a:hover {
-    color: white;
-    background: #CC342D;
+    color: #00afe6;
+    background: rgba(255,255,255,0.6);
 }
 /** header section **/
 
@@ -99,7 +105,7 @@ a:active {}
     padding: 15px;
     font-size: 1.6em;
     border-radius: 10px;
-    font-family: "Eras ITC";
+    font-family: "Eras ITC",'Open Sans';
     font-weight: 100;
     opacity: 0.6;
     background-color: rgba(0,0,0,1);
@@ -367,7 +373,7 @@ footer #aria #foomenu #footer-menu > li{
 	float: left;
 	margin-right: 0;
 	margin-left: 20px;
-	font-family: "微軟正黑體";
+	font-family: "微軟正黑體",'Open Sans';
 }
 footer #aria #foomenu #language #lang-menu{
 	list-style: none;
